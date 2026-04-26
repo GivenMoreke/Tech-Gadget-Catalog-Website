@@ -1,57 +1,137 @@
-#  Tech Gadget Catalog Website
+# BeyondGadget — Interactive Tech Gadget Catalog
 
-A responsive multi-page web application that showcases a variety of modern tech gadgets including smartphones, laptops, tablets, and accessories.
+A fully interactive, multi-page tech gadget catalog website built with **HTML, CSS, and JavaScript**.
 
-##  Project Overview
-This project was developed using **HTML, CSS, and JavaScript** to demonstrate front-end web development skills. It provides users with an interactive platform to browse different tech products through a structured and visually appealing interface.
+The site allows users to browse, search, compare, and bookmark tech gadgets across multiple categories, with a persistent shopping cart and mobile-responsive design.
 
-##  Features
--  Home page with featured products  
--  Product listing with images and descriptions  
--  About page with project information  
--  Contact page layout  
--  Responsive and clean user interface  
--  Interactive elements using JavaScript  
+---
 
-##  Technologies Used
-- HTML5  
-- CSS3  
-- JavaScript  
+## Live Demo
+
+> Clone the repo and open `index.html` in your browser — no server required.
+
+---
+
+## Pages
+
+| Page | Description |
+|------|-------------|
+| `index.html` | Home page with search, gadget details, favourites, and comparison |
+| `products.html` | Full product catalog with category filtering |
+| `about.html` | About page |
+| `contact.html` | Contact page |
+
+---
+
+## Features
+
+### Search & Discovery
+- Search gadgets by name, category, or specs in real time
+- Search triggered by button click or Enter key
+- Clear search resets results instantly
+
+### Gadget Details
+- Click any gadget to view full specs — RAM, storage, battery, display, processor, OS
+- Detailed spec card with product image and price
+
+### Favourites / Bookmarks
+- Bookmark gadgets to save them to a favourites panel
+- Remove favourites directly from the panel
+- Bookmark button updates dynamically per gadget
+
+### Side-by-Side Comparison
+- Select 2 gadgets (Ctrl+click or double-click) to compare
+- Dynamic comparison table generated from gadget data
+- Limited to 2 gadgets with user notification if exceeded
+
+### Shopping Cart
+- Add gadgets to cart from the detail view
+- Cart persists across page refreshes using **localStorage**
+- Cart count badge updates in real time on the navbar
+
+### Print Specifications
+- Print any gadget's full spec sheet with a single click
+- Opens a clean print-formatted popup window
+
+### Mobile Responsive
+- Hamburger menu for mobile navigation
+- Mobile menu slides in and closes on link click
+
+### Notifications
+- Animated toast notifications for all user actions (add to cart, bookmark, warnings)
+- Slides in from right, auto-dismisses after 3 seconds
+
+---
+
+## Gadget Categories
+
+The catalog includes **24 gadgets** across 6 categories:
+
+-  **Smartphones** — iPhone 15 Pro, Samsung Galaxy S24, Google Pixel 8 Pro, OnePlus 12, Xiaomi 14 Ultra, Nothing Phone 2
+- **Laptops** — MacBook Pro M3, Dell XPS 13, HP Spectre x360, ASUS ROG Zephyrus G14, Lenovo ThinkPad X1 Carbon, Surface Laptop 5
+- **Tablets** — iPad Pro 12.9, Samsung Galaxy Tab S9, Microsoft Surface Pro 9, iPad Air 5, Lenovo Tab P12 Pro
+- **Audio** — AirPods Pro, Sony WH-1000XM5, Bose QuietComfort 45, Sennheiser Momentum 4, JBL Live 660NC
+- **Wearables** — Apple Watch Series 9
+- **Desktop** — Gaming Desktop PC
+
+---
+
+## Tech Stack
+
+| Category | Technology |
+|----------|-----------|
+| Markup | HTML5 |
+| Styling | CSS3 |
+| Logic | Vanilla JavaScript (ES6+) |
+| Storage | localStorage (cart persistence) |
+| IDE | VS Code |
+
+---
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/GivenMoreke/Tech-Gadget-Catalog-Website.git
+
+# Open in browser
+open gadget-catalog/index.html
+```
+
+No dependencies or build tools required.
+
+---
+
+## Key Concepts Demonstrated
+
+- DOM manipulation and dynamic HTML generation
+- Event listeners (click, dblclick, keypress, Ctrl+click)
+- Array methods — filter, find, map, reduce, findIndex, splice
+- localStorage for persistent cart state
+- CSS animations (slide-in/slide-out notifications)
+- Multi-page navigation with consistent layout
+- Responsive design with mobile hamburger menu
+- Print API for spec sheet generation
+- Data-driven UI — all 24 gadgets rendered from a JavaScript data array
+
+---
 
 ## Project Structure
-project-root/
-│── index.html
-│── about.html
-│── contact.html
-│── products.html
-│── css/
-│ └── styles.css
-│── js/
-│ └── script.js
-│── images/
 
+```
+gadget-catalog/
+├── index.html           # Home page — search, details, favourites, comparison
+├── products.html        # Full product catalog
+├── about.html           # About page
+├── contact.html         # Contact page
+├── styles.css           # Global styles
+├── script.js            # Main page logic
+├── products-script.js   # Products page logic
+└── images/              # Product images (24 gadgets)
+```
 
-## How to Run the Project
-1. Download or clone the repository:
-   ```bash
-   git clone https://github.com/GivenMoreke.git
-   Open the project folder
-Double-click on index.html or open it in your browser
+---
 
- Learning Outcomes
-Improved understanding of front-end development principles
-Gained experience in building multi-page websites
-Practiced creating responsive layouts and UI design
-Applied JavaScript for interactivity
+## Authors
 
- Future Improvements
-Add product search and filtering functionality
-Implement a shopping cart system
-Integrate a backend and database
-Enhance UI/UX with animations and transitions
-
- Author
-Reitumetse Given Moreke
-
-GitHub: https://github.com/GivenMoreke
-LinkedIn: https://www.linkedin.com/in/reitumetse-given-moreke-556642267/
+**Reitumetse Given Moreke** — 
